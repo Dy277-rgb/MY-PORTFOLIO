@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Thann Dy — front-end developer based in Phnom Penh, Cambodia. Explore selected projects, skills, and contact information.">
+<meta name="theme-color" content="#eef1f6">
+<title>Thann Dy – Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script src="/javascript.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Thann Dy</a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#work">Work</a>
+      <a class="hide-sm" href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle" id="theme" type="button" aria-label="Switch color theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-text">
+    <h1>My Portfolio</h1>
+    <p class="role" aria-live="off">I build <span id="word"></span><i class="caret" aria-hidden="true"></i></p>
+    <p class="lede">I’m a front-end developer who turns ideas into fast, accessible websites and apps. Based in Phnom Penh, working with clients worldwide.</p>
+    <a class="btn primary" href="#work">See my work</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+      <ul class="socials" aria-label="Social links"></ul>
+    </div>
+        <figure class="photo">
+            <div class="ring"><img id="photo" alt="Portrait of Thann Dy" src="/dy.png"></div>
+        </figure>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Selected work</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+      <ul class="projects" id="projects"></ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap two">
+      <div class="about">
+        <h2>About me</h2>
+        <p>I started with a single HTML page and never stopped. Today I focus on interfaces that load quickly, work with a keyboard, and stay easy to maintain.</p>
+        <p>Away from the screen, I cycle, cook, and photograph street markets. Replace this text with your own story.</p>
+      </div>
+      <div>
+        <h2>Skills</h2>
+        <ul class="skills" id="skills"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Let’s work together</h2>
+      <ul class="socials" aria-label="Social links"></ul>
+      <form id="form" novalidate>
+        <label>Name<input id="name" name="name" autocomplete="name"><span class="err" data-for="name"></span></label>
+        <label>Email<input id="email" name="email" type="email" autocomplete="email"><span class="err" data-for="email"></span></label>
+        <label>Message<textarea id="msg" name="msg"></textarea><span class="err" data-for="msg"></span></label>
+        <div><button class="btn primary" type="submit">Send message</button></div>
+        <p class="status" id="status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Thann Dy. Built with HTML, CSS and JavaScript.</div></footer>
+</body>
+</html>
